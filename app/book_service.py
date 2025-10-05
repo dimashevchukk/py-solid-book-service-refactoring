@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 
 from app.book import Book
 
+
 class IBookService(ABC):
     @abstractmethod
     def display(self, book: Book) -> None:
@@ -28,5 +29,3 @@ class BookServiceReverse(IBookService):
     def print_book(self, book: Book) -> None:
         print(f"Printing the book in reverse: {book.title}...")
         print(book.content[::-1])
-
-

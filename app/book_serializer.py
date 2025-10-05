@@ -4,6 +4,7 @@ from abc import ABC, abstractmethod
 
 from app.book import Book
 
+
 class IBookSerializer(ABC):
     @abstractmethod
     def serialize(self, book: Book) -> str:

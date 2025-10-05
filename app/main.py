@@ -1,6 +1,6 @@
 from app.book import Book
-from app.book_service import BookServiceReverse, BookServiceConsole
-from app.book_serializer import BookXMLSerializer, BookJSONSerializer
+from app.book_serializer import BookJSONSerializer, BookXMLSerializer
+from app.book_service import BookServiceConsole, BookServiceReverse
 
 
 def main(book: Book, commands: list[tuple[str, str]]) -> None | str:
